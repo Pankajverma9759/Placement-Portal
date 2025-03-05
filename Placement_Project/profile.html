@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Student Profile - Placement Cell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .main-screen {
+            width: 100%;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 50%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .profile-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        .profile-container h3 {
+            color: #333;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-screen">Welcome to Your Profile</div>
+    <div class="container">
+        <h2>Create Your Profile</h2>
+        <form action="submit_profile.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="degree" placeholder="Degree" required>
+            <input type="text" name="skills" placeholder="Skills (comma separated)" required>
+            <textarea name="about" placeholder="About Yourself" rows="4" required></textarea>
+            <input type="file" name="profile_photo" accept="image/*" required>
+            <button type="submit" class="btn">Submit Profile</button>
+        </form>
+    </div>
+    
+    <!-- Display User Profile -->
+    <div class="profile-container">
+        <h3>Your Profile</h3>
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>Phone:</strong> 1234567890</p>
+        <p><strong>Degree:</strong> B.Tech in Computer Science</p>
+        <p><strong>Skills:</strong> HTML, CSS, PHP, JavaScript</p>
+        <p><strong>About Me:</strong> Passionate about web development and software engineering.</p>
+    </div>
+</body>
+</html>

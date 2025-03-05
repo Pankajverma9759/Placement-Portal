@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(images/rbmi_photo.png);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #0878f0;
+    color:blue;
+    padding: 1rem 0;
+    
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+    border: 2px solid white; 
+    background-color: #ca1d1d;
+    
+    
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ca1d1d;
+    text-decoration: none;
+}
+/* nav ul li a:hover {
+    background-color: gray; /* Background color on hover */
+    /* color: white; Text color on hover */
+ */   
+#nav-elements:hover{
+background:pink;
+}
+
+.hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+.contact-info{
+display:flex;
+justify-content: flex-end;
+}
+
+.social-icons{
+    display:flex;
+    justify-content: flex-end;
+}
+
